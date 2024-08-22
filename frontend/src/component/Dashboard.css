@@ -1,0 +1,101 @@
+/* Dashboard.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Light grey-blue background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #34495e; /* Dark slate blue */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: column; /* Align filters vertically */
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ecf0f1; /* Light grey */
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    gap: 15px; /* Gap between filter elements */
+}
+
+.filter-container input,
+.filter-container select,
+.filter-container button {
+    width: 80%; /* Ensure all inputs and buttons take up 80% of the container width */
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #bdc3c7; /* Soft grey border */
+}
+
+.filter-container button {
+    background-color: #1abc9c; /* Medium green */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-container button:hover {
+    background-color: #16a085; /* Darker green */
+}
+
+.data-visualization {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; /* Increased gap between charts */
+    margin-bottom: 40px;
+}
+
+.data-records {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.data-record {
+    background-color: #ffffff; /* White background for cards */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.data-record:hover {
+    transform: translateY(-5px);
+}
+
+.data-record p {
+    margin: 5px 0;
+}
+
+.data-record a {
+    color: #2980b9; /* Blue color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.data-record a:hover {
+    color: #1e6f95; /* Darker blue on hover */
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #bdc3c7; /* Soft grey */
+    margin: 15px 0;
+}
